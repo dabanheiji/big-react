@@ -2,7 +2,7 @@ import type {
 	ElementType,
 	Key,
 	Props,
-	ReactElement,
+	ReactElementType,
 	Ref,
 	Type
 } from 'shared/ReactTypes';
@@ -13,8 +13,8 @@ const ReactElement = function (
 	key: Key,
 	ref: Ref,
 	props: Props
-): ReactElement {
-	const element: ReactElement = {
+): ReactElementType {
+	const element: ReactElementType = {
 		$$typeof: REACT_ELEMENT_TYPE,
 		type,
 		key,
